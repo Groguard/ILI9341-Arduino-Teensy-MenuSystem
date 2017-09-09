@@ -18,15 +18,15 @@ typedef void (* CurrentFuncPtr) (); // Function pointer for menus
 
 class MenuSystem
 {
-	public:
-		MenuSystem(ILI9341_t3 tft);
-		void start(void);
+    public:
+        MenuSystem(ILI9341_t3 tft);
+        void start(void);
         void displayMenu(void); // display the current menu
         void setMenu(char** menu, uint8_t size); // set the current menu
         void setFunc(CurrentFuncPtr* funcs, uint8_t size);
         void action(uint8_t action); // process user input
         int returnSelected(void);
-	private:
+    private:
         uint8_t menu_top = 35; // top space between title and items
         uint8_t selected; // currently selected menu item
         uint8_t current_menu_index = 1; // current position in the array
