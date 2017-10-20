@@ -7,9 +7,6 @@
 #define TFT_CS 10
 #define TFT_RST 255
 
-#define BL_PIN 3
-#define BRIGHTNESS 255   // how bright the tft is
-
 #define up 26
 #define down 25
 #define select 24
