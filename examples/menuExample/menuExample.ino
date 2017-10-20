@@ -86,7 +86,6 @@ void setup() {
   // Tft Setup
   pinMode(TFT_RST, OUTPUT);
   digitalWrite(TFT_RST, HIGH);
-  analogWrite(BL_PIN, BRIGHTNESS);   // Turn Backlight on full
 
   tft.begin();
   menu.start();
